@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.container2{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header nav{
+    padding: 10px 50px;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 70px;
+}
+header nav h1{
+    color: #53ec53;
+}
+header nav ul li a{
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.2s;
+}
+header nav button{
+    background-color: transparent;
+    padding: 8% 14px;
+    border-radius: 10px;
+    border: 2px solid #53ec53;
+    color: #53ec53;
+        transition: 0.2s;
+    font-weight: bold;
+}
+.hfood::after{
+ content: ' HFood';
+ color: #53ec53;
+}
+header nav button:hover{
+    background-color: #53ec53;
+    color: white;
+}
+header nav ul li a:hover{
+    color: #53ec53;
+}
+        *{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .products{
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product__name{
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            padding: 5px;
+        }
+        .products > div{
+            border: 2px solid #ccc;
+            text-align: center;
+            width: 200px;
+            min-height: 80px;
+            padding: 10px;
+        }
+        .product__calories::after{
+            content: ' ккал';
+        color: #53ec53;
+        font-weight: bold;
+        }
+        h1{
+            text-align: center;
+            padding: 10px;
+        }
+        .hover{
+    color: #53ec53;
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+  <header>
+    <nav>
+    <ul>
+        <li><img height="80px" src="./Adobe Express - file.png" alt=""></li>
+       <li>
+        <ul>
+        <li><a href="./index.html" >Home</a></li>
+        <li><a href="#" class="hover">Products</a></li>
+        <li><a href="./calc.html">Calculator</a></li>
+        <li><a href="https://t.me/MyCalTrackerBot"><button>telegram bot</button></a></li>
+        </ul>
+       </li>
+    </ul>
+    </nav>
+  </header>
+    </div>
+    <div class="container2">
+        <h1>Список Продуктов</h1>
+        <div class="products">
+
+    </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
